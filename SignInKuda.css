@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+}
+.div{
+    justify-content: space-between;
+    padding:  11px 50px;
+    display: flex;
+    align-items: center;
+}
+.button{
+    padding: 14px 25px;
+    border: 1px solid #40196D;
+    color: #40196D;
+    background-color: #EFF1FF;
+    border-radius: 12px;
+}
+.button:hover{
+    cursor: pointer;
+    transition: all 2s;
+    transform: translateY(-4px);
+}
+.div-1{
+    margin-top: 100px;
+    margin-left: 60px;
+    display: flex;
+    border: 1px solid #40196D;
+    background-color: #EFF1FF;
+    border-radius: 7px;
+    width: 350px;
+    padding: 16px;
+}
+.icon{
+    margin-top: 7px;
+    color: var(--successColor) ;
+    color: green;
+}
+.div-2{
+    margin-left: 3px;
+}
+.check{
+    font-size: 11px;
+    font-weight: bolder;
+    color: #40196D;
+
+}
+.check-1{
+    font-size: 11px;
+    font-weight: bolder;
+    color: green;
+}
+.div-3{
+    border: 1px solid lightgray;
+    height: 350px;
+    width: 300px;
+    padding: 22px;
+    /* border-style: none; */
+    border-color: lightgray;
+    background-color: var(--whiteColor);
+    border-radius: 5px;
+    /* box-shadow: 0 0 25px rgba(0, 0, 0, .06); */
+    margin-top: 40px;
+    margin-left: 60px;
+    box-shadow: 15px 30px 40px var(--boxShadow);
+    padding: 40px 40px 55px;
+}
+.sign{
+    font-weight: 800;
+    font-size: 22px;
+}
+.type{
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.6;
+    font-weight: 500;
+    line-height: 22px;
+}
+.email{
+    font-size: 12px;
+}
+.clear{
+    margin-top: 13px;
+    padding-left: 15px;
+    padding-right: 75px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border-style: hidden;
+    box-shadow: 3px 1px 4px 2px lightgray;
+}
+.div-4{
+    margin-top: 6px;
+}
+.div-5{
+    margin-top: 25px;
+}
+.div-6{
+    margin-top: 9px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.div-7{
+    opacity: 0.9;
+    color: #40196D;
+}
+.current{
+    color: black;
+    opacity: 0.7;
+}
+.span{
+    color: #40196D;
+    opacity: 1 !important;
+    font-weight: 700;
+}
+span:hover{
+    cursor: pointer;
+}
+.button-1{
+    margin-top: 24px;
+    padding: 12px 46px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #40196D;
+    border-style: none;
+}
+.button-1:hover{
+    transition: all 1s;
+    transform: translateY(-5px);
+    cursor: pointer;
+    opacity: 0.8;
+}
+.div-8{
+    margin-top: 19px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.div-9{
+    opacity: 0.6;
+}
+.span-1{
+    color: #40196D;
+    opacity: initial;
+}
