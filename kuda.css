@@ -20,14 +20,16 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* position: relative; */
+    position: relative;
 }
 .flex-1{
     display: flex;
     gap: 2rem;
-    border: 1px solid red;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border: 1px solid lightgray;
+    opacity: 99;
+    z-index: 100;
+    /* border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; */
     font-weight: 500;
     line-height: 37px;
 }
@@ -46,6 +48,9 @@ body{
 .underline{
     text-decoration: none;
 }
+.prof-1{
+    color: #40196D;   
+}
 .prof-1:hover {
     .class-1{
         display: block;
@@ -55,9 +60,16 @@ body{
     text-decoration: none;
     color: black;
 }
-/* .airtime:hover{
-    transform: ;
-} */
+.airtime:hover{
+    transition: all 2s;
+    transform: translateY(2px);
+}
+.time:hover{
+    transition: all 0.6s;
+    transform: translateY(-1px);
+    transform: translateX(1px);
+    font-size: 15px;
+}
 .class-1{
     position: absolute;
     top: 56px;
@@ -66,15 +78,15 @@ body{
 .div-1{
     background-color: white;
     padding: 20px;
-    opacity: 0.7;
+    opacity: 99;
     z-index: 1;
 }
 .div-2{
     background-color: rgb(245, 245, 245);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 13px;
-    opacity: 0.7;
+    padding: 17px;
+    opacity: 99;
     z-index: 1;
 }
 .payments{
@@ -94,12 +106,6 @@ body{
     text-decoration: none !important;
     color: black !important;
     line-height: 40px;
-}
-.press:hover{
-    color: red !important;
-    
-    /* transition: all 0.4s; */
-    
 }
 .prof-2{
     position: relative;
@@ -121,11 +127,9 @@ body{
     padding: 30px;
     background-color: white;
 }
-.press:hover{
-    color: red !important;
-}
 .sign{
     text-decoration: none;
+    color: #40196D;
 }
 .button-1{
     padding-left: 25px;
@@ -412,18 +416,18 @@ body{
     position: static;
     border-radius: 50%;
     overflow: hidden;
-    box-sizing: inherit;
+    box-sizing:content-box;
     background-color: rgb(223, 227, 255);
     opacity: 1 !important;
     z-index: 0;
 }
 .width-1{
-    margin-top: 75px;
+    margin-top: 77px;
     margin-left: -25px ;
-    /* position: absolute; */
+    position: absolute;
     transition: all 2s;
     overflow: hidden;
-    animation: girl 2s linear 0s 1 ;
+    /* animation: girl 2s linear 0s 1 ; */
 }
  @keyframes girl {
     0%{
@@ -442,20 +446,18 @@ body{
     margin-left: -60px;
     margin-top: 50px;
     opacity: 99 !important;
-    z-index: 100 !important;
+    /* z-index: 100 !important; */
     position: absolute;
-    animation: phone 2s linear 0s 1 ;
 }
-
-@keyframes phone {
-    65%{
-        background-image: url("./Assets/kudagirl.png");
-        width: 200px;
-    }
-    100%{
-        display: block;
-        
-    }
+.width-3{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.width-4{
+    position: absolute;
+    margin-top: 222px;
+    margin-left: 212px;
 }
 .section-1{
     margin-top: 200px;
@@ -902,3 +904,30 @@ body{
     margin-left: 95px;
     margin-top: 30px;
 }
+.gain{
+    display: flex;
+    gap: 17rem;
+}
+.fill{
+    background-color: rgb(255, 245, 219);
+    border: 1px solid rgb(255, 245, 219);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 180px;
+}
+
+/* @media screen and (max-width : 500px) {
+    .nav{
+        background-color: #40196D;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .div-30{
+        float: left;
+        align-self: center;
+        margin-top: 50pc;
+    }
+} */

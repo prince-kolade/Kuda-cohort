@@ -99,6 +99,19 @@
     background-color: #FFFFFF;
     border-style: hidden;
     box-shadow: 3px 1px 4px 2px lightgray;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.clear:focus{
+    opacity: 1;
+    border: none !important;
+    box-shadow: none !important;
+    border-style: none !important;
+}
+.clear input:focus{
+    border: none !important;
+    box-shadow: none !important;
+    border-style: none !important;
 }
 .div-4{
     margin-top: 6px;
