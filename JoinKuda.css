@@ -3,6 +3,9 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 .nav{
     font-size: 15px;
     font-weight: bold;
@@ -15,22 +18,26 @@
 }
 .flex{
     display: flex;
-    justify-content: space-around;
+    gap: 4rem;
+    /* justify-content: space-around; */
     align-items: center;
-    /* position: relative; */
+    position: relative;
 }
 .flex-1{
     display: flex;
     gap: 2rem;
-    border: 1px solid red;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border: 1px solid lightgray;
+    opacity: 99;
+    z-index: 100;
+    /* border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; */
     font-weight: 500;
+    background-color: white;
     line-height: 37px;
 }
 .kuda{
     width: 90px;
-    padding: 17px;
+    padding-left: 40px;
 }
 .icon{
     margin-left: 4px;
@@ -43,6 +50,9 @@
 .underline{
     text-decoration: none;
 }
+.prof-1{
+    color: #40196D;   
+}
 .prof-1:hover {
     .class-1{
         display: block;
@@ -52,26 +62,42 @@
     text-decoration: none;
     color: black;
 }
-/* .airtime:hover{
-    transform: ;
-} */
+.airtime:hover{
+    transition: all 0.01s;
+    transform: translateY(2px);
+}
+.time:hover{
+    transition: all 0.2s;
+    /* transform: translateY(-1px); */
+    transform: translateX(1px);
+    font-size: 15px;
+}
 .class-1{
     position: absolute;
-    top: 56px;
+    top: 50px;
     display: none;
+}
+.mount{
+    /* padding: 15px 15px; */
+    padding-bottom: 19px;
+    padding-top: 16px;
+}
+.laptop{
+    padding-left: 150px;
+    padding-right: 50px;
 }
 .div-1{
     background-color: white;
     padding: 20px;
-    opacity: 0.7;
+    opacity: 99;
     z-index: 1;
 }
 .div-2{
     background-color: rgb(245, 245, 245);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 13px;
-    opacity: 0.7;
+    padding: 17px;
+    opacity: 99;
     z-index: 1;
 }
 .payments{
@@ -92,37 +118,28 @@
     color: black !important;
     line-height: 40px;
 }
-.press:hover{
-    color: red !important;
-    
-    /* transition: all 0.4s; */
-    
-}
 .prof-2{
     position: relative;
 }
 .prof-2:hover{
     .class-2{
-        transition: all 6s;
         display: block;
     }
 }
 .class-2{
     display: none;
     position: absolute;
-    top: 30px;
-    transition: all 6s;
+    top: 50px;
+    
 }
 .blog-1{
     border: 1px solid lightgray;
     padding: 30px;
     background-color: white;
 }
-.press:hover{
-    color: red !important;
-}
 .sign{
     text-decoration: none;
+    color: #40196D;
 }
 .button-1{
     padding-left: 25px;
@@ -335,4 +352,169 @@
 .icon-9{
     color: #40196D;
     margin-left: 8px;
+}
+.home{
+    color:#40196D;
+    border:1px solid #40196D;
+    border-style: none;
+    padding: 2px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    background-color: rgb(223, 227, 255) !important;
+}
+.home-1{
+    padding-left: 5px;
+}
+.planes{
+    border: 1px solid green;
+    background-color: rgb(218, 248, 218);
+    border-style: none;
+    padding-left: 2px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    color: green;
+}
+.piggy{
+    border: 1px solid orange;
+    background-color: rgb(255, 223, 173);
+    border-style: none;
+    padding-left: 2px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    color: orange;
+}
+.signal{
+    color:#40196D;
+    border:1px solid #40196D;
+    border-style: none;
+    padding: 2px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    background-color: rgb(223, 227, 255) !important;
+}
+.bulb{
+    border: 1px solid red;
+    border-style: none;
+    padding: 2px 6px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    color: rgb(255, 31, 31);
+    background-color: rgb(255, 182, 182);
+}
+.mobile{
+    border: 1px solid green;
+    background-color: rgb(218, 248, 218);
+    border-style: none;
+    padding: 4px 8px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    color: green;
+}
+.wifi{
+    border: 1px solid blue;
+    border-style: none;
+    padding: 4px 6px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    color: rgb(58, 228, 228);
+    background-color: rgb(176, 252, 252);
+}
+.fa-wifi{
+    font-size: 10px;
+}
+.bag{
+    border: 1px solid #40196D;
+    border-style: none;
+    padding: 4px 6px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    background-color: rgb(223, 227, 255) !important;
+}
+.globe{
+    border: 1px solid orange;
+    background-color: rgb(255, 223, 173);
+    border-style: none;
+    padding: 4px 6px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    color: orange;
+}
+.spa{
+    border: 1px solid red;
+    border-style: none;
+    padding: 4px 5px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    color: rgb(255, 31, 31);
+    background-color: rgb(255, 182, 182);
+}
+.fa-sack-dollar{
+    color: #40196D;
+}
+.briefcase{
+    border: 1px solid blue;
+    border-style: none;
+    padding: 3px 3px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    color: rgb(26, 26, 92);
+    background-color: rgb(207, 233, 243);
+}
+.fa-k{
+    border: 1px solid black;
+    border-style: none;
+    padding: 3px 3px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    color: black;
+    background-color: rgb(169, 163, 163);
+    padding: 3px 3px;
+}
+.pie{
+    border: 1px solid blue;
+    border-style: none;
+    padding: 3px 3px;
+    border-radius: 50%;
+    height: 20px;
+    font-size: small;
+    width: 20px;
+    align-content: center;
+    color: blue;
+    background-color: rgb(225, 225, 253);
 }
