@@ -326,14 +326,14 @@ body{
     /* font-size: 17px; */
 }
 .kuda-img-1{
-    margin-top: -65px;
-    margin-left: -20px;
+    margin-top: -270px;
+    margin-left: -25px;
     position: relative;
 }
 .kuda-img-2{
     margin-top: 70px;
     margin-left: -30px;
-    position: absolute;
+    position: relative;
 }
 .button{
     margin-left: 150px;
@@ -431,7 +431,7 @@ body{
     height: 300px;
     position: static;
     border-radius: 50%;
-    overflow: hidden;
+    overflow: hidden !important;
     box-sizing:content-box;
     background-color: rgb(223, 227, 255);
     opacity: 1 !important;
@@ -441,8 +441,8 @@ body{
     margin-top: 77px;
     margin-left: -25px ;
     position: absolute;
-    transition: all 2s;
-    overflow: hidden;
+    /* transition: all 2s; */
+    /* overflow: hidden; */
     /* animation: girl 2s linear 0s 1 ; */
 }
  @keyframes girl {
@@ -830,6 +830,19 @@ body{
     background-color: black;
     border-radius: 5px;
     border-style: none;
+    border-color: black;
+}
+.button-4{
+    background-color: rgb(64, 25, 109);
+    border-radius: 5px;
+    border-style: none;
+    border-color: rgb(64, 25, 109);
+}
+.button-3:hover{
+    cursor: pointer;
+}
+.button-4:hover{
+    cursor: pointer;
 }
 .footer-3{
     padding: 80px;
@@ -903,8 +916,13 @@ body{
     padding-left: 55px;
     justify-self: center;
     border-style: none;
-    background-color: rgb(223, 227, 255) !important;
+    background-color: rgb(224, 227, 250);
     box-shadow:2px 2px 2px  lightgray;
+    display: flex;
+    gap: 6rem;
+    overflow: hidden;
+    z-index: 99;
+    opacity: 100%;
 }
 .money-3{
     color: #40196D;
@@ -930,6 +948,9 @@ body{
     
     margin-top: 150px; 
     
+}
+.classic{
+    margin-top: -70px;
 }
 .pillar{
     display: none;
@@ -1105,7 +1126,87 @@ body{
     opacity: 0.8;
     display: none !important;
 }
-
+.tilt{
+    padding-top: 3px;
+    padding-left: -1px;
+}
+.function{
+    border: 1px solid lightgray;
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+}
+.param{
+    border: 1px solid #40196D;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: -360px;
+    margin-left: 180px;
+    background-color: rgb(230, 232, 253) !important;
+    border-style: none;
+}
+.function-1{
+    border: 1px solid lightgray;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.param-1{
+    border: 1px solid #40196D;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: -180px;
+    margin-left: 45px;
+    background-color: rgb(227, 228, 239) !important;
+    border-style: none;
+}
+.param-2{
+    border: 1px solid #40196D;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-left: 275px;
+    background-color: rgb(230, 232, 253) !important;
+    border-style: none;
+}
+.function-2{
+    border: 1px solid lightgray;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin-top: -30px;
+    margin-left: 100px;
+}
+.structure{
+    margin-left: -30px;
+    margin-top: 60px;
+}
+.switch{
+    border: 1px solid lightgray;
+    width: 45px;
+    height: 22px;
+    border-radius: 12px;
+    background-color: rgb(247, 104, 91);
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 220px;
+    z-index: 1;
+}
+.switch-1{
+    border: 1px solid lightgray;
+    height: 19px !important;
+    width: 19px !important;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 1px;
+}
 
 
 
@@ -1406,10 +1507,11 @@ body{
     .kuda-img-1{
         width: 200px;
         margin-left: -20px;
-        margin-top: -50px;
+        margin-top: -220px;
     }
     .kuda-img-2{
         width: 100px;
+        margin-left: -90px;
     }
     .mode{
         margin-left: 100px;
@@ -1550,7 +1652,7 @@ body{
     }
     .footer-1{
         display: grid;
-        grid-template-columns: repeat(2, 100px);
+        grid-template-columns: repeat(2, 10d0px);
         grid-template-rows: repeat(1, 350px );
     }
     .div-5{

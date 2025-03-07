@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./kuda.css">
     <!-- <link rel="stylesheet" href="./Assets/bootstrap-5.3.3-dist/css/bootstrap.css"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/c1f5e51c18.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -206,7 +207,7 @@
              </p>
              </div>
             <div class="div-30">
-                <h1 class="big"></h1>
+                <h1  class="big"></h1>
                 <p class="small">
                     <i class="fa-solid fa-paper-plane icon"></i>
                 </p>
@@ -224,35 +225,35 @@
                     <i class="fa-solid fa-piggy-bank icon"></i>
                 </p>
                 <h3 class="big-3">
-                    <img class="kuda-img-2" width="130" src="./Assets/kuda card.png" alt="">
-                    <img class="kuda-img-1" width="250" src="./Assets/kuda img.png" alt="">
+                    <img  data-aos="zoom-in-up" class="kuda-img-2" width="130" src="./Assets/kuda card.png" alt="">
+                    <img  data-aos="zoom-in-up" class="kuda-img-1" width="250" src="./Assets/kuda img.png" alt="">
                     
                 </h3>
             </div>
         </div>
     </main>
     <section>
-        <div class="parent">
-                <div class="child">
+        <div  class="parent">
+                <div data-aos="zoom-out-right" class="child">
                     <p class="round"><i class="fa-solid fa-credit-card icon"></i></p>
                     <p class="order">Order a Kuda card on the app with pickup and delivery options.</p>
                 </div>
-                <div class="child">
+                <div data-aos="zoom-out-down" class="child">
                     <p class="round"><i class="fa-solid fa-chart-pie icon"></i></p>
                     <p class="order">Enjoy cashless payment options online and offline.</p>
                 </div>
-                <div class="child">
+                <div data-aos="zoom-out-left" class="child">
                     <p class="round"><i class="fa-solid fa-chart-diagram icon"></i></p>
                     <p class="order">Pay your essential bills and buy gift cards easily.</p>
                 </div>
         </div>
         <div class="parent-1">
-            <div class="child">
+            <div data-aos="zoom-out-right" class="child">
                 <p class="round"><i class="fa-solid fa-paper-plane icon"></i></p>
                 <p class="order">Get 25 free transfers to Nigerian banks every month.</p>
             </div>
-            <div class="child">
-                <p class="round"><i class="fa-solid fa-piggy-bank icon"></i></p>
+            <div data-aos="zoom-out-left" class="child">
+                <p  class="round"><i class="fa-solid fa-piggy-bank icon"></i></p>
                 <p class="order">Save money automatically any time you spend.</p>
             </div>
         </div>
@@ -274,37 +275,38 @@
                 </p>
         </div>
         <div class="width"> 
-            <p class="width-2">
+            <p  data-aos="fade-up" class="width-2">
                 <img width="200" src="./Assets/kudagirl.png" alt="">
             </p>
             <p class="width-1">
-                <img width="300" src="./Assets/kudagirl1.png" alt=""> 
+                <img  width="300" src="./Assets/kudagirl1.png" alt=""> 
             </p>
-            <p class="width-3">
+            <p  data-aos="fade-up" class="width-3">
                 <img width="100" src="data:image/png;base64,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" alt="">
             </p>
-            <p class="width-4">
-                <img width="70" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIoAAAC/CAYAAAAhMER6AAAACXBIWXMAAAABAAAAAQBPJcTWAAAAJHpUWHRDcmVhdG9yAAAImXNMyU9KVXBMK0ktUnBNS0tNLikGAEF6Bs5qehXFAAAThklEQVR4nO2df3Ac5XnHv+/+vl+SzjY2kkuxpThYxkApJg52HWKD6TAFEuyCM/HQloGZeppgp2mGTDI0k+kQkuGPTmKa6aSBMUzaFJgmE2M6ZGLimLoGO7abuJYtAdUPsC1bwtJJ93Pvbnff/rG6050l3b73WzbPZ0aj+7H77nu7333e53neZ3cZasR/7PnNysil6BdTifSaWCSp1KpdorG0LQqOyJp04K4tN/10xYoV6dznrBaNv/zCm9v7jg3+7amjQ21jI9FaNEk0keu6rsHtd618r21h65f+4ok/HQRqIJSf/PMbnz19ZPC5I/t7fdV3kZgvtISDuPuhW9+7d/utD65YsSJd9RARHU/u/J+D75FIrjKikTiO/brvk5pP+SKAPVI1jb3//vstvceGbs5k7Rp1j5hPnO3/CHbG2QQAVQkFALIZEsnVzMSl+BIAqFt0El4cBAD4/DqGh8bQtXoJAKC/ZwSKKuP6Gxbll+3vGcm/9vk1dHSGAQDDAxGkkpma92vB4sCM7RKlqZtQ1mzqQtfqJYiMxtHfM4KHd67DQM8Ihp85iB3fuQfty10xvLr7bQDTB6yjM4y/fvoeAMCPnvpVzQ/mmk1d2PyFmwEAT37+JzVt+2qmrvmOjs4F6O8ZwYb7uwEAh/b14oHH1+RFcuJAP44f6K9nF5rGt7/lR/dKGQCQSgG+Anc/meTw+92As7fPxrf/IdmMLpZF1T7KXCxYHIDhVwEA7cvDiIwmsGBxELdt6gIADPSM4JXdb9dr801ly4M6Vq3SIas6mKSAA5BVPf+Xy0rIqrvclgf1pvZXhLr7KDnfZKDnIu5/bA0AIDKawEvPHBRuq2PZQjzw+G3594f29eat1PECq/S5x25H+/IwLgxGsPeFY/D5NTy8ax26broWANB/6iImRhMz2t+2cx06V1+L8OIABnpGcPxAP9ZMCfq1509geGisrN/u9zNIsoxEzIRhMMApdvgdJwtARSJmIhAy8tZlPlM3oXROCST3P2dJzGQWLz3zlrCT6vNr+Mtv3onwlAP66u63YSYy+XYLfZj25eH85z6/VuQLAcCNa6+b0f62nevyfcv1N9cGAPiCle0ix7ZgGMy1IMws+k6SFMiqDgNpOLZVUfu14O/3PIRYJIXvf/V1z2XrNvTMxf5/Pyl8hhoB92DnRHJ4X5+wT3Pjp6/Li2SgZwQ/eupX2P/y/xYtEy4YCi8MRvDSdw+6QkxmRX/OnHDHhqRoIktWva1yuGX9Mvj8br9CbQY6OsPYcF+353oNF8qaTV35jnrxwNRQAriO794XjglvZ+nyBfnXrz1/Av09I9j/8klcGIzkP+8osDbHD/Tj9NGz7v8jHwpvpxSMza8hpf36MLZ/bQO+8eMHAQAfvncJALDuz27wXLduQolM+QKX/29fHsYDj68RaiNnSQDg0Gvvei7vC0wLsK1g3choLP86lZge8joKxDQ8OJ5/PT6LH1MOpgnE4gwZ0518VTVg7CMz/6fr7m63bSAa5TDNUq1VR3hREDuevge3rF8GM+FaSiOg4VN3r8Dre04AABa2hzzbqZtQcjt+oOciACAyGsfAlD9x26YufO6x2z3bOFEwzOx4ZjM6li2csczqtdfB59cQXhws8keGCyxH503TPkdH57Q4cn0DgM7V104vU9AOMJUEnGXbc2EYQFtYg6zKiMfSMHwGFl4z/acZGlLJDGRVRltYg2EIN102d227CZ2rl2Dr36xF5FI8b0U2br0RQ32j+cz6XQ/dVLKdOgrFPVDjowmYySw6Vy8pMv3r71+Zjyzm4viBfhze1wcAMPwqtu26Az6/huGBaRG0Lw9jx3fuwY6pJF2O00fO5V9v27Ue23auwzf+ZUs+ZAfczG/OH9n8hZuxbec67Hj6niKnV9MVt/1nNiPUVt7cpywr8AdcsRQSj6WhGxJkuT6xxC3rl+HZXzyCP//SHfj1K6cA7lqRW9Yvw5uvun7agmvdqPTslHBW3NJess26+igDPSNYsDiAQ6/1AnD9kxe/ezB/cB7euW7WSKSQvS8cy1uWnCgA5AWU+zy8OFDkhA4PjeWdV8Ov4rZNXQgvDhT5KKlkBq89P+333LapC52rlxQtk8Pwq0VDmyiZtAVNk4s+0zQZmbRTdlvlcvumLkQuxTF20R1677j3k+g7cR6A6z/5/BoufOj+1muWtpZsq27h8YfvjuLiBxMIhQ0cf/P/4A+6OzkyGscPvvqf+JP7VgIArvvEIpw+eja/3sSlJA6/3pd/DQCv7H4bk2Mp6D63u0uub8PeF45h4MwolnYuQDSSxNCZSwiFNYTCfsQi7nr7Xz6J00fOYdkqd15p6Ix79nR0tuW3d/xAPwbPjGL5qsUItfkwPDiG4cEJ3PDHHQCAc/3j+OHX30BH10KMnp8sax9kzDQkSYGmF+9mTVfg2DYyZhqaUftk28nDQ9j+tQ1gMsOG+7rR3zNS5IeYiQyMgIY1m7owPhwHAKhaaZtRN6G8+7sLRe/3Fpy5YxdjRe8Lmeu7X/7b72Z8duqdD3DqnQ+mPxia2d7w0NiMcPzy92MXY/mzLsflYfhQ7+is/Z2NRBwYG08j3CpBkhUkYiZi8WkLEgpJCAQNSHYWY5cySNYhg28mXTEAwMgHE1W3R7WtdSAQBNpCgCS7/pDjANe2+/PfxybdMIcxhnCYwe+ftZmKCS8K5kUSjaTwRxuWFX0vyVL+u5awmN/V8DwKUX8+s8VNoHGb4+ThIfzhDdcAAFJxNzWgGa59OHl4KJ+FHh8pnRIgodQJJinIpEonSGyLox6H4N0TwzATGfz0H/8by1YuRijsxt9v/eIM7n3kVgDTBWe5ObnIaLxkmySUOiHJMiBJiE2YsC8rArSyQGzCBCTJXa7G9J04j29tfwUnDw/hzs+vAgCMXYhhqG8UazZ9AsB0WNx+vevY//7QUMk2yUepA4MDNhw7C03XoOlAPFo8AapqEoItrg/h2DYGB+pXTvrS9w5iw33d6Dlytsi6/PJff48N93WDySw/RJWChFIHDr+TxaJFKaxf5wqAO8Do6PQwVPj+8NsZHH6n+knIUhx63c1jtS7yAxwYOD2Cob5RPPL1OwEAgwIRHQmlTuzdl8HefbWt962Wob5RPPngdPlnqM0AOLD3x96TrSSUjzGnj57F6PlJXPhgZib6ckgoH2Ne+t5B4WUp6iGEIKEQQpBQCCFIKIQQJBRCCBIKIQQJhRCChEIIQUIhhCChEEKQUAghSCiEEFVPCvpCfrS0zX5JYtpMI23Or6n2+UQg6IeszF3hFp2Izfldo6laKKqqQNVnbyabbd4tHa4EZEWec9/NN2joIYQgoRBCkFAIIUgohBAkFEIIEgohBAmFEIKEQghxZWR7riAURS56XJbVpEfUKGpBxpcDllVdP+aFUAyfDiaVNm7ccUouk0qkhLcnSRJ039x3Okqn0nAcsVtnMcagGxo0XZszy2pbDmzLRiqZqptwJEmCz29A1VXIyuz7ycrasDIWUkmz6Pf5AnPfIyV3B9SmC8UX8MEfLH1bRCtrgzu8ZLq7LKHIrOQ2s5kMvHTCGIPhN2AEdEge95OVFQmyIkEzVGTTFpLxZNVneA5JkhAI+aEZqueyiipDUWUYAR1mIo1kIgXOecl9wWSJAU0WiqLKniKxLQfRSAyh1mCDeuWNosgItgbnPHNLoeoKQloIiYnq7mULALqhwd/i9xTqbBgBHYqmIDZR+r4oOZomFEmSEAqXvhGuwznik3Fw3tjbgJdCUWSEFoQqOjg5JMYQCgfhVPG7DJ+OQEt19/RSVBktHscgR1OiHsYYQm1Bz52djNbORNeCWoikkErb0Q2tapHkELWKTRFKsCVQ7JXPQjJuzqtaFsZYTUVSKZqmItga8F6wxjRcKIZP93S8Mma2LOe0EQRbAk0XCWMMgbbGiwRosI+iKLKnybSyNuLR6h29WqKoslBUAbgiT6fSyGYtcM7BGIOsSNB1HZpfq0psht8QWt+2HKTNDLKZTD4clyQJqqZAN/SKiqUaJpSc6S6FwzliE/PLeQUAf8DbH7CyNmIT8Rn5F865m7/IJpFMpBBqDVZ0oBhjMALed7nOmFnEo4kZ+9BxXPGkzQwUVUYoXN4w2rChp0WgY7FITDjR1SgkSfI8sFbWRlSg75xzRCdiyJjl37NN01Vv5z9uIiYQJVpZG7HxWFlRV0OEEgj6PZ3X+GSiaenuUmh66SHH4RzRSKwsKxiPJmBb5Z0Qml76gQ3l+nWW5YpFlLoLRTc0T5OZMbPzKsIpRNVKCyUZTZY9VHLOy3bWFQ+rloiVf0N9y7KFrVtdhaIoMvwezms2bSE2KZYdbAZej3vLpCu79Wc5JwZjrOSwY2XtiofsdCrtvRDqLBTNKD2u2pYzr0UCoKR/YmXtqhzvbFrschavpFilYgWATGYeWBQv5lt6vly4c+X2vVyaKhTVw0Ej5g91FYpX+OUPGtCNK1csTJofj6ttRMa4rkIxE2nPcdjf4nerwhqIoognvEr1X1Hlip9tzBgTTrx5pQ0UrfK8qeYR1eWo+9ATm4yX/KESYwi2Bhv6MGm5jEefePlQhr+yZ9F65Wcup5R1VlS54pOtVKVfIXUXCucciWii5A+VFUm4LmIuRM8MAFDLOEiZdOkw1gjoZYucMVay/HA2LC/LHCy/7KCcOayGOLOWZXtWdCmqXLKKzfaoSxE9MwyfXlZlWjZT+gBJjKElHBIWC2MMoQqq47wEq+pKWVWAiiJ7Fo4V0rCoJ5PJIhkv/eg0zVBhzHHA7csfozXLul6OcSUFP47jeGYvc5ViXuZfklzLWcmkYCad9QwONENFSGAY1zS17NqahpYZpBIpKEppcxdo8cOxnRmJIEvgXivB1gB0Q4eZNIvW1zQVukAdzJz9TqY811VUGa0LW5Axs8ikM0XClmXZfRpYhdsH3CHcTKQ9a4w1Q0Wb3gorbblXE/DpjK2iKNB9uue822w0vGY2Hk2gRQ6V7GygLQBnPFZUBmlZNmzL8TTZqq5A1WtbiG1l3TkRkQOtGWpVgiiFmTShG5rnPpAYq3k/Gp5w41M1J6XMqMQYAi2BGSa0mROHlcz41hrOOeLR5kx5NCUz6zgOYpHSU9yzObepRP0uoPKCT10RUE3lfC2wsjbik42vAGxaCt/K2khES0+Nz+bJe4XaotuuaD2r/IKfuXA4r9hCpc1MzcQiui+aOtdjptKeEcXl0Uy1B8vK2kjFKy/ctiwbk5eiVVk2h3P3N9iVD2VpM4NYpDoLl6vME6HpdzOIR70r24KtgaLQ07JsTHw0WXZJYTJuYnI8WhQJVILjOJgcjyIZN8s+UBkzi4mPJmtyvVImk61oPzic5/eF6Ox91VFPPJrA5Hh09g7Z3p3gU6WE5SagOOeITcahJGTohnt55GyRVDZtIZPOuHmIqeIe23Lm7HPuexFSiRRSiVT+InVZkWf9Hdm0hWzWmnHxezKeBKocQXL7QYpJ0HR1zovlHc5hFeyLQoGU2heO5dZSVC0Ux7KrdjBzleqVYFk2rHh5ZYDVbG82ctXt5VLLqyAdx4GZSsMUrFgr6ofAvmj60ENcGZBQCCFIKIQQJBRCCBIKIQQJhRCChEIIQUIhhCChEEKQUAghSCiEECQUQggSCiEECYUQgoRCCEFCIYQgoRBCkFAIIUgohBAkFEIIEgohBAmFEIKEQghBQiGEIKEQQpBQCCFIKIQQJBRCCBIKIQQJhRCChEIIQUIhhCChEEKQUAghSCiEECQUQggSCiEECYUQgoRCCEFCIYQgoRBCkFAIIUgohBAkFEIIEgohRLVCKf9RDsQVBeP8FFClUFasWJHmYNvBudhjpIgrCgbs/ubuR/9u6nX13LvgiZaUjmfBcHct2iOaC+f8vOTIT/5m5AdHc5/VRCg57uz48qOMYycYE3+WOzG/4HjTl8aTb4w/V/RYsJoKBQA+u/SJP2AOnuUMn6p120Qd4TzGGX/yreEf7p/t65oLJQdZlysIjhd9aey+3IoUUjehAK7vYhp4igNb6rkdolJYL7PZ04W+yJxLNqI7G5fsWstl/hTAuxuxPcIDzmOcYfdbw/+0R3SVhgglx8b2L291gJ2MsaWN3C5RgMAwMxsNFQqQH47+inP+KPkvjYMBP+cMuw+ef+5ches3BxJMY6hWIAXtNJecYBzOt9KQVDtqJZCC9uYP5MNUCecxxtgezvDzWgkkx7wSSo6NS3athexspbBaFNbLuPOikWb7y3VShbdQj0Zrxb0LnmhJGnwrg7SFQuvL4DwGsJ85kH/2Xxe+31vvzc1roRTymfavdEuwt3LwzR/bockdWvY7cPbPlWqvF1eMUArJiQaMrb3qLU0TxVHIFSmUQtxJSL6Wg20G+NqrIdRmHL8FwxGby/sbMayIcMUL5XI+0/6VbsasT0tg3Ryse95bHNfXOMoYzsCWjorMuzSDq04os7Fxya61jmyvYpwtZcAqDt7dDMvDOH7LgWhOFFxxztc6jK0XHwuhzMXGJbvWAoAj26sksBDnaGHAqtz3nLGQl0XinJ+XwM7nP2A4B+AcADhweiVbiRpZp7deYStBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBNJb/B2O+ppNaGsmLAAAAAElFTkSuQmCC" alt="">
+            <p  data-aos="flip-left" class="width-4">
+                <img  width="70" src="data:image/png;base64,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" alt="">
             </p>
         </div>
     </section>
     <section class="section-1">
-        <div class="call">
-            <img class="circle" width="300" src="./Assets/circle.png" alt="">
-            <div class="display">
-                <div class="line">
-                    <img width="190" src="./Assets/img.png" alt="">
-                    <img width="190" src="./Assets/img1.png" alt="">
-                    <img width="190" src="./Assets/img2.png" alt="">
-                    <img width="190" src="./Assets/img3.png" alt="">
-                    <img width="190" src="./Assets/img4.png" alt="">
-                    <img width="190" src="./Assets/img5.png" alt="">
+        <div data-aos="fade-up" class="call">
+            <img  class="circle" width="300" src="./Assets/circle.png" alt="">
+            <div  class="display">
+                <div  class="line">
+                
+                    <img  width="190" src="./Assets/img.png" alt="">
+                    <img data-aos="fade-up" width="190" src="./Assets/img1.png" alt="">
+                    <img  width="190" src="./Assets/img2.png" alt="">
+                    <img data-aos="fade-up" width="190" src="./Assets/img3.png" alt="">
+                    <img  width="190" src="./Assets/img4.png" alt="">
+                    <img  width="190" src="./Assets/img5.png" alt="">
                 </div>
-                <div class="line-1">
-                    <img width="190" src="./Assets/img6.png" alt="">
-                    <img width="190" src="./Assets/img7.png" alt="">
-                    <img width="190" src="./Assets/img8.png" alt="">
-                    <img width="190" src="./Assets/img9.png" alt="">
+                <div data-aos="fade-up" class="line-1">
+                    <img data-aos="fade-up" width="190" src="./Assets/img6.png" alt="">
+                    <img d width="190" src="./Assets/img7.png" alt="">
+                    <img data-aos="fade-up" width="190" src="./Assets/img8.png" alt="">
+                    <img  width="190" src="./Assets/img9.png" alt="">
                 </div>
             </div>
         </div>
@@ -330,15 +332,16 @@
             </a></p>
         </div>
         <div class="fill">
-            <img width="400" src="./Assets/girl-in-kuda_enhanced.png" alt="">
+            <img data-aos="fade-up" width="400" src="./Assets/2025-03-05 (5).png" alt="">
         </div>
     </section>
     <section class="section-1">
         <div class="tree">
-            <img width="300" src="./Assets/circle1.png" alt="">
-            <img class="kuda-card" width="320" src="./Assets/kudacard.png" alt="">
-            <img class="kuda-1" width="190" src="./Assets/kuda-1.png" alt="">
-            <img class="kuda-sign" width="90" src="./Assets/kuda-sign.png" alt="">
+            <p data-aos="flip-left" class="switch"><strong class="switch-1"></strong></p>
+            <img data-aos="fade-up" width="300" src="./Assets/circle1.png" alt="">
+            <img data-aos="zoom-in-up" class="kuda-card" width="320" src="./Assets/kudacard.png" alt="">
+            <img  class="kuda-1" width="190" src="./Assets/kuda-1.png" alt="">
+            <img data-aos="flip-right" class="kuda-sign" width="90" src="./Assets/kuda-sign.png" alt="">
         </div>
         <div class="lime">
             <h1 class="display-1">Turn off access, <br> turn on safety.</h1>
@@ -361,14 +364,12 @@
         </a>
         </div>
         <div>
-            <img class="kuda-hello" width="500" src="./Assets/1740307666381.jpg" alt="">
+            <img data-aos="fade-left" class="kuda-hello" width="500" src="./Assets/1740307666381.jpg" alt="">
         </div>
     </section>
     <section class="section-1">
-        <div class="classic">
-            <div class="circle-3">
-
-            </div>
+        <div  data-aos="fade-up">
+                <img class="classic" width="400" src="./Assets/2025-03-05 (2).png" alt="">
         </div>
         <div class="viper">
             <h1 class="display-1">Fees as clear as <br> glass.</h1>
@@ -447,9 +448,11 @@ I have no complaints whatsoever since i started using Kuda
     </section>
     <section class="section-3">
         <div class="display-3">
-            <h1 class="display-4">Our Partners</h1>
+            <h1  data-aos="fade-up"
+            data-aos-duration="2000" class="display-4">Our Partners</h1>
         </div>
-            <div class="div-3">
+            <div  data-aos="fade-up"
+            data-aos-duration="2000" class="div-3">
             <img class="data-1" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEwIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMTEwIDMyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNi44MzQ2NCAzMS45Nzc3TDAuMjA3MDMxIDAuMDIzNDM3NUg0LjkwMTU5TDkuODI2MjggMjUuNzE0OUwyMS4wNTY0IDAuMDIzNDM3NUgyNi4yMTEyTDExLjM5MTEgMzEuOTc3N0g2LjgzNDY0WiIgZmlsbD0iI0I3QjdCNiIvPgo8cGF0aCBkPSJNMzIuNjc1OSA3LjcyNjNMMjUuOTEwMiAyMi42NTJIMzUuMTM4MkwzMi42NzU5IDcuNzI2M1pNMjQuMDIzMiAyNi44MTJMMjEuNjc1OSAzMS45Nzc3SDE3LjAyNzNMMzEuNjg2MyAwLjAyMzQzNzVIMzUuNTk4NUw0MS4xNjc1IDMxLjk3NzdIMzYuNzAzMUwzNS44Mjg2IDI2LjgxMkgyNC4wMjMyWiIgZmlsbD0iI0I3QjdCNiIvPgo8cGF0aCBkPSJNNTcuMzY5IDI3LjcyNjNWMzEuOTc3N0g0My45Mjk3VjAuMDIzNDM3NUg0OC40ODYyVjI3LjcyNjNINTcuMzY5WiIgZmlsbD0iI0I3QjdCNiIvPgo8cGF0aCBkPSJNNzUuMTM2OCA3LjcyNjNMNjguMzcxMSAyMi42NTJINzcuNTk5Mkw3NS4xMzY4IDcuNzI2M1pNNjYuNDg0MSAyNi44MTJMNjQuMTM2OCAzMS45Nzc3SDU5LjQ4ODNMNzQuMTQ3MyAwLjAyMzQzNzVINzguMDU5NEw4My42Mjg0IDMxLjk3NzdINzkuMTY0TDc4LjI4OTUgMjYuODEySDY2LjQ4NDFaIiBmaWxsPSIjQjdCN0I2Ii8+CjxwYXRoIGQ9Ik05Ni4wMzI5IDE0Ljk5NDlDMTAwLjcyNyAxNC45OTQ5IDEwMi40NzYgMTIuNjE3NyAxMDIuNDc2IDkuNjAwNThDMTAyLjQ3NiA2LjU4MzQ0IDEwMC43MjcgNC4yNTIwMSA5Ni4wMzI5IDQuMjUyMDFIOTAuOTQ3MVYxNC45NzJMOTYuMDMyOSAxNC45OTQ5Wk05My43MzE2IDE5LjI0NjNIOTAuOTQ3MVYzMS45Nzc3SDg2LjM5MDZWMC4wMjM0Mzc1SDk2Ljc2OTNDMTAzLjQ4OSAwLjAyMzQzNzUgMTA3LjA1NiA0LjQxMjAxIDEwNy4wNTYgOS42MDA1OEMxMDcuMDU2IDE0LjIxNzcgMTA0LjI0OCAxOC4yMTc3IDk4LjkwOTQgMTkuMDQwNkwxMDkuOTc4IDMxLjk1NDlIMTA0LjQ1NUw5My43MzE2IDE5LjI0NjNaIiBmaWxsPSIjQjdCN0I2Ii8+Cjwvc3ZnPgo=" alt="">
             <img class="data-1" src="https://kuda.com/static/entreeCapital-af919d4ffd7d5cef28085ee2a9085519.svg" alt="">
             <img class="data-1" src="https://kuda.com/static/sbiHoldings-32de2b58b5a5d5a40696e17db098a44d.svg" alt="">
@@ -460,8 +463,8 @@ I have no complaints whatsoever since i started using Kuda
     </section>
     <section>
         <div class="display-3">
-            <h1 class="display-4">Choose the freedom you need.</h1>
-            <div class="div-10">
+            <h1  data-aos="flip-up" class="display-4">Choose the freedom you need.</h1>
+            <div  data-aos="flip-up" class="div-10">
                 <div class="div-11">
                     <h2 class="head-5">Other Banks</h2>
                     <img width="110" class="img-5" src="./Assets/kuda-bank.256x58.png" alt="">
@@ -569,7 +572,8 @@ I have no complaints whatsoever since i started using Kuda
             
         </div>
     </section>
-    <section>
+    <section  data-aos="fade-up"
+    data-aos-duration="1000">
         <div class="display-3">
             <h1 class="display-5">More for you</h1>
         </div>
@@ -606,13 +610,12 @@ I have no complaints whatsoever since i started using Kuda
     <div>
 
     </div>
-    <section class="section-5">
+    <section  data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" class="section-5">
         <div>
             <h1 class="money-3">The money app for <br> Africans.</h1>
         <p class="money-4">Save, spend, send and invest money across borders.</p>
         <div class="money-5"><a href="./JoinKuda.html"><button class="button-1">Join Kuda</button></a></div>
-        <!-- <div class="money-5 money-6"><a href="./JoinKuda.html"><button class="button-1">Apple</button></a></div>
-        </div> -->
         <div class="button pillar">
             <button class="button-2 pillar-1">
                 <img class="img" width="110" src="./Assets/7c4457ad97426235ec984fe54df2adf5.jpg" alt="">
@@ -621,9 +624,18 @@ I have no complaints whatsoever since i started using Kuda
                 <img class="img" width="110" src="./Assets/png-transparent-google-play-computer-icons-android-google-text-label-logo.png" alt="">
              </button>
          </div>  
-        <!-- <div>
-            <img width="200" src="./Assets/IMG-20250225-WA0000_enhanced.jpg" alt="">
-        </div> -->
+        </div>
+        <div class="structure">
+           <h1 class="function"></h1>
+           <p class="param"><i class="fa-solid fa-chart-diagram icon tilt"></i></p>
+           <h2 class="function-1"></h2>
+           <p class="param-1"><i class="fa-solid fa-piggy-bank icon tilt"></i></p>
+           <p class="param-2"><i class="fa-solid fa-chart-pie icon tilt"></i></p>
+           <h3 class="function-2">
+            <img class="kuda-img-2" width="110" src="./Assets/kuda card.png" alt="">
+            <img class="kuda-img-1" width="220" src="./Assets/kuda img.png" alt="">
+           </h3>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer-1">
@@ -680,6 +692,9 @@ I have no complaints whatsoever since i started using Kuda
             </button>
             <button class="button-3">
                 <img class="img" width="110" src="./Assets/png-transparent-google-play-computer-icons-android-google-text-label-logo.png" alt="">
+             </button>
+             <button class="button-4">
+                <img class="img" width="110" src="./Assets/2025-03-05 (6)-fotor-20250305163546.png" alt="">
              </button>
         </div>
         <div>
@@ -748,7 +763,13 @@ I have no complaints whatsoever since i started using Kuda
             </p>
         </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
+
+
 </body>
 </html>
 

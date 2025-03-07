@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./JoinKuda.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/c1f5e51c18.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -186,7 +187,8 @@
             
         </nav>
     </header>
-    <main>
+    <main  data-aos="fade-up"
+    data-aos-duration="3000">
         <div class="money">
             <div>
                 <h1 class="money-1">Download Kuda, open an account!</h1>
@@ -208,12 +210,13 @@
                     <img class="qr-code-img" width="100" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADmCAQAAAAQR/P8AAAABGdBTUEAALGPC/xhBQAAACBjSFJN%0AAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZ%0AcwAAFiQAABYkAZsVxhQAAAAHdElNRQfnBxgIMAVBJ7E+AAAS4klEQVR42u2da5RU1ZXH//dWdVV3%0A09BNP6DloRUsIhIxDB1jNA40KjEPgkRijDMZNSszi2QcB5wsl4kRV5SlJBpBo+ZhHhDjiiZoopIH%0AGXVsyTBxmUHsCEGkyJSsKEgD3S2PflX3nQ9W77tbz/HUfUD1WWv/6suu0/s87r196+57zt77OEi0%0AOm1oRRuOzKu82F3knAJhlOK1D7XvXflP+beuVyucSxPrHWBn3bQVyX8v9+CEUih8u33lB7oAwEGy%0AFbeMP+9J5/3lHpRQKl77fy+4qbMNDpJA/+qKa8o9ICEIhW9XfBlwLk2sfs+UXeUejBCU3guq/uCu%0AdyetKPdAhOBULG71XHjytLMRd9Fhx0GF11/ugQhhcCrclnKPQQhJi+Nu8co9CCEs8rNpLU7KLfcQ%0AhPDIxbOWFvnZtBcnLXeevXhy8aylBe5Mp9yDEMKxxZE7z17kZ9NiHAcpr6/coxDCINam1bgQg8Va%0AXMjEtLXIz6bFuDPLPQIhLPKeZzGevCpYi7wq2IzjZuVVwVZkesxeMq6bK/cYhJAkPTcjP5uWkvLc%0AfOjKTsyfrxh7fBljSftTgcaa0/R5F9NZoNSYpWnx87Eff1D6HZkes5acTI/ZS1Yunr3InWc1yTga%0AqcccJELV7MTzitIhbEWHonwfBmI+/O3YSLLfYxXORrooj2MaTVCH5ZyHMaF6H8Rm9EQYfSwXbw7W%0AozJUzU24SFE6hG/hMaV+3NOw6/Cgou1a3I33FuXtOI/KF+MhZSt34sxQvfdiLl4KP3gnlouXQGXI%0Ai5fSlA+gN46BGSmgoBnX8PGk2Uh0930q5NEj5O/VW2RlesxecnCz5R6DEBq3INNjlpKJ55nHeRHP%0AGjRS+IL2Wafii2T5ceIPx16M4cxdNagN2cYxPIQjBp0LcEYs4817yXzM02NtuNag0YzLA128VaiL%0Ad4ga/g0XRG7jTdyIfQaddTFdPPEes5iMOCDZS1JeFWxGXhWsJRfP9FjcuLgaC+nbdTQL0oyvKy3P%0AYMyBOsWh2v14MtaSnCn3iXkbydwofM9zMZ99uxZdRek0fC2GizcVVwXQHh9I+8QiK+nWIouxFiNz%0AmxYj73kWk/eSo3FiuoB/xZP07U2SdjJHvI/jPpJvww8UrTTiUZysKN+A9xj6b8bPlTVHFxkn9rnN%0AeDiEvLLcL33dqH0E6rxcQ5q2fXpxrNwnoATynjzzrEWsTYsR1z+riX16rAYTDRqmv7+dCeTH30dz%0ALaVxEDUkBaGAfco1xDEYa6iZwETjrEeQtcx3Jxl3iNfn8GnjAdaU1NIwz9O69i6cb1yn9unERXTZ%0ABwP1eAiLlH5dC/FTQ80GtBlbD3b070bsd15YJ0A9tXQXmP7vRzKI7pA9DuGwstzsIOueoFX/4d4E%0AS5EZFovJy0q6vWTjeeZ1YlNIG6o99kOahYaiNIAX6ClVhbNJ4wC2sRMwhY2lsyilMBvVRfko/mTs%0Ac0tAK3iY/gDm1zuJaSX9eWW4SHm4jdbgD+AcDNvSk/EMaTzGQqKvxnKSF+CpolSPn2BGUd6mDWz2%0A+efyHKo88yxGnnkW48jEtMVIEh2LSYa/866PeSjnB9J+Bd8k+XmjdjfTTrGRd7Hy3SQdxvdwUlF+%0AQ9Pi4sBztLHjAWlv1DHgLfFAn04q3+HVsHL1ZwNpd3hZpcbFrKdlxvb4Z0m5T8wIUCkGi7VkZG7T%0AXpKepOa3lkgzLOo8Ci67mYcwRLK6I0+50laAo9R3kKRyT7NG5+d3KMDV9OqP3FNqjGzb10go29DB%0Az4RutJEmuBwnm94VMmvGpcrST+IKku9jS5PfR71Cezu+rhoVWnAqfVtE86Y9+E9Kp/ECVin7P4uC%0AkxNYoAxP/gvLfXK6MoPKQdyE/UV5Eu6m8maWk2U1/mg4P3PwVZKfxP0KjQrcgcklnGk1TiWyoa1N%0AtUW2nGlcycrzyjaeUbaR9NYbe/+V0TZs9HYZa65Rauz1ZpDGGZr+rzL238q0v6vUqPS2RrA2s5Ig%0A3F5yjjsaQ7yEkpCJaZuRi2cvTjITum6nslQXuXom/Z9MYM5857FW1uAWZc0MeYFNxzOUHPETrOYK%0A3Evyw7QwfAiX4NWiPA1blG3fgJtJ/hVa2QiHTXv+evA4i5JVRzNMxCZMKMrPYTyV/4PybPXhEvzF%0AcD71ZL1kMnSgSV0gbT/Wp5K5pSZZK1Wamt3kZPAmq1nBavJ/mDFUXsBRVlNND3Pn89/EXI2T4YDR%0A3cHBOOq/imkPKs9WL46FdKAAgJwsCdmMPPPsRVbS7SUTZXLtZaNGNU5TlDZjtzIncw9pJ9mjHphO%0AT6xpmuE2sX740ypD5oYuFnY8mRfAYeURJTA9wDkZQp6eYntY+ZvKtnvRrDxDpZH3HFR6IXNUmyMH%0A7sJlitJ9mKuMBbgaN5KcRgXJR5mZog7S6GMJhFPMg/QYTYy75Ic50vXvdnyJ5MuVQSLvw3MkP6KZ%0Az/VxRvxb+l6ZSWUERyU2sosXNADFqUpmQ1ubZodRdTxQDXo0ddXDN2dOT2teUKqNNStYn73KUR0N%0AdE48zZEVlOWFwBFTnIxYm/YiWf8sRsKarSaC69/FytIctpO8dYTVOEwXPqacXCrg8QC9N+Fckrcx%0Atz2fBOYFDMccphpz6SnazEb1gkZ/nnG2aQ+2hhqJicoI64EK1hgXKZuZMx9nVSA3vMWs5pdjWYy9%0AkI1wB5W+VMJYzEuqx2MxFmk3c1z+I4QTgOOOzgxIgpmsZECyF1lVsJl4djTZiXXkx/hCoJq78T2S%0Ax+AOg3YH7lZuwrYQzST/GDsMrcxi/RzEdSTPp2XcQaylibUDoc9KDt8nuZr1+QsKlC5gNQtXMR39%0A28l6yMRgbf7OqwxgJ3Jrk7v+XW/shweaLNboLDRamxweaPIUlXLXv1I+apuxjWksZeVXaloJSjYd%0AYattodxIgnCLkekxa5EE4TbjxJL1bxYeoV/fXzMbS80RfJaWWidhA5WfTtIQ1rCF0YdpRW8qHqZ+%0AeA7otfglyR/F0qJUzRLkxM9ytmGbeq19Fju2DCv/kjEvYmlkvWQc8XmTWayL+Z/hCH5PcivbdsZn%0ACH/Er+mbv0o+Bp9QtridaS9Vthg/7zf2U6/ROBvxkHPEYLEXiYy1l6y8KthLwYmwGOtPHKU1i55j%0AjbkAq5XTTwW4lLsP6DSGEIcM7QVQyfo5TGM5jAZWzvtRuyN1s+dyeBoD6ue9CNbmOSTNxXeU/ltf%0AwxJDG39mrfgkcB1uo2+XGP3UgqX/5vwHy9j3FZrnbMTtlESH81ssU7ZyBQsXCc+uwDUiTEz7l/1U%0AzW/vRJju678prdMkalnNfIRgDBMTmNNtN43lCJqUI5+kaWVPCTZ2/GQcMVisJS/TYzYj1qa9eBGs%0ATb/mZPbbW8/KxxnbqGLanRrDYxoFmvThNVokHavJunfQ+PwZx55z+1nYpf+cbWSmQC/+RnI3G203%0A66dZ+YQ8gn2s7SaSOyjS18XJUYwOZxRl/fNd/3R5WIItxuo+FzNt9WIsh7v+8ax/V8WwGBvN9S9T%0AKasK1pL3JA+LvThu+BAvobxkPXH9s5ZcPK5/Xfgfmt07GX9n0B7CRuVcYCeFriQ1Ychj8VGqOVfT%0A+geVm6dx+HradBYucxJMHGJBJw2sZoNSm2uYzkko4skxzV3/lhu193p1SivQ7PpXDnSBJmtDtxiX%0AtZlNi7VpMfLMs5YcZGLaWjLiw2Iv+fj3jOX8jO09dzPNdFbjG8rdV2drWrmBtCdjGTkN7lBmbdbR%0AhBtI/hN+RvJC5sB3H81W1uEayojdhDWksQUPkrxWufffOFxPCUS24UdU/iGWkeYKOlIHP2C+BmsQ%0AkPgDTYLlmC4F3zY9zTtMpeYc0/yTZe0FC2vmrC8hiGYvaevmNn16vNkRAk1QKYEm9uLJ9JjFyMS0%0AxYgbhMVEsDYXkHQyfklW4GZWvp1pX2H04byM3PAGsRKbqVzt+Pf3eJLk+7FeoVGHu8nfy5xCDlhF%0A++pVlLDPyA2YT/JS/LUodeJyOqUz2Ah5e3diY1HykC9hXFqcZPj3vKdIugjzKSXhNlbO2WRsr4Uk%0AT9uKTwMuJHmjUiOJc42uh5wPBDr66ax/392jj0U3FXCPsuZLxmMrEYlVsJesPPPsRbL+WU2EZ56f%0A+6SR/fZWsfJumDIgp9jGbClylSsgwVrxGY+Dxmy0dfT0bWSpjodoSzWgh7WdYO55Pi7qA1ly9crR%0A1gdoIQyZKCvpz5BUy8JMlmAeyV/FY4Y2ZuMnJP+G7DcXV7OdRnxew6eVF28/k1fRviQpZuO9ho+Q%0A/EE28oeYzejThHWYFuBM3K/0DCjFwo1C3ktmQhssM5SljSxUqdbYRjVr5THKgJ7EBE3rLxsjhqYo%0Aa/ax7OqnMY1uZdb1LvQHOhOnBtKOD8n6ZzFisNiL7GhiMVEiY7eRVIspZG924A0q72baM5U3+QTW%0AyiFNPztof61OzKTs1Efxf6TRzJ6z/iSch90U8NyBM6g8yfrkps40MjGq8YoylPp1Jv+VtaKmngVj%0AduI1khvYWKISejHWX0a8yOuhUl2O6fAb/poXY+9Qtt3hZY2LsfwTPuuf+qPb8Hdd2BP+zsVY8WGx%0AFklTbC9Z8du0F5nbtJko02N+jpUWNhM4U5N7RZ1mp0mp7WA3HqFvfnBJBX5L/20drGYf056vCftQ%0AM4eFtDQbtZvxYYNGH/5LsxWwz1bNvmSBcwHG4/oXNwPeEmaddVK5LqyZ72iygUpLsTbXKPvXWZtL%0APBN7vWajtan7BAVpN/xuzUJ5yYr3mL3kJA+LzYgPi71E8R77fMxjuRD/aNA4CffScN/Lyi9js4V+%0AAHEat5LlV1dC/3dR6EgK19A85wG25wnnh8w5cYVx6XYe1pL8IJ4uSgncNCJXdjCyXoRXhXXhqyqZ%0AaNSoxZXK8rNwlqJ0LD4TqP/fkEteM66lBdttmou3mR3/Mpg4naU/byOpAou0sVFmCrIkZC952fDX%0AYhyZ27QYufPsJUrKRp8PY7UxjETN/+JfFKUJ3I4b6Zt5x+XV+KmitBYPkC23hyW0OWpsrxRuZWaK%0A2tPtOU3qnC9ieVFyAzkYvpNkIYb3vBqcSa6uwehSljoBD+p1vKgobWQOfP1KjShM0macHqZX02dl%0ABAuTkxXXP3uR9TybkezuFuNFmB5Tc8TokJ4YEZhi5g0aYgXqqWYPcyx02ULqIaWrekKz1DrAAk36%0AYKJfGZbC2U9uikClZlKuiiQPB5i+eTF4JFnEsgUb5wGsNGg0Y1MJFqTPXEriPQMbUFOUn2Z26nJs%0AJflyNv3kM5VpcG5lFqF5X+anjakXB9FB8ofwkFLHjx7qw6XYSd/2BjgnwFv5NmO+88z/nWD/baWw%0An2xSHrhSYP3w+6pG2UZS83+dKGG0PseMLg4jMd9L3YH6fxvi+mczspJuMZIByWKOa9a/8ORYYIZ6%0A97waioAdufnv+8jabcBOaqUC5ypbmcJa8alnUa1JpQbwMntazSa7cgDt1H8XnlXWPIVt/9tS0jKx%0Amiwi5JgOFmjCM+P5znw80MTPMT3S9c//8EATMzrXv3i4io1rK5Vy1z/dJ7ZAk7QbPqxZKDeSstFa%0AMo7MbVpL3hO/TWvJIpbF2LhxsEC5d/FElhYnj98r634cU4tSGp+lyaomBOEonmD76vlMYxkNz2e5%0AZ4LuszzMIB5FJ31bGrB2DqPS2iwFXXDyhkCtqIkn0MRsbUbMMZ2WZ57FyKuCxYgbhMXISrq1ZJGM%0Ae2J6oXG2LmX0NBvEvczz6j6aadzD9kKZwkI3OBvwqKK0CbcrtR9gGQB9+ktYmDUzWxPDkKcQnWQJ%0AUQ56joO1GYxS5jY7qTz8bs26uc1lRtswnrBmTlz750H2z7MZeVWwFkmiYzWxTI8NUXa9oAyUoNNH%0ArZeinVaaQxVshEnNCnRaaXh7zCVwkLWi1nZG9O9rJ9jEXlzkECFlo88WZabmUjD5eALAAtp/ua8E%0A/W+yEBWfQziH5FbNTnV3KlPk8BCVzayVm7FIoT2eZdXeybQvwYqQZ+jdiMUN4pA2V2YcvBRIW53v%0AOcdePU7R1JyhDADhJ6iDeWWqjzjF2uhmfZ6N44EYLBYjF89aspD3PIuRVwWLcZDyzOExwijEqZRV%0ABWuRLdisRn42rcVJu1n52bQWB2kv7MSkUFactDjdWoxYmxYjd57FyKuCxbgzyz0CITTynmctTkp+%0ANq1lpgRX2kuVJz+b1uKk3RZ5VbAWt0de0m3Fc1Dh9UdvRzjxOCm3pdxjEEIjd561OCl3pjzzrEXu%0APGuRGRab8Vx4eLXcoxCC47UDLpzBJ8o9ECE4Q+2tcFu93sfLPRAhOHtXtsFtQ82zg/eUeyhCMAbv%0Amfoq4LYCePEWrz1qc8KJw2v/80p4QCLj5vFK77m/qKtyj08EoBAzg/ds/UJLVysycIZDP1uc353S%0AsMKZ7ZxZ7sEJWl4dfKL38ZpnWwEcdrZ4/w95TdVxcEqPFAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAy%0AMy0wNy0yNFQwODo0ODowNCswMDowMHKVWLEAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDctMjRU%0AMDg6NDg6MDQrMDA6MDADyOANAAAAKHRFWHRkYXRlOnRpbWVzdGFtcAAyMDIzLTA3LTI0VDA4OjQ4%0AOjA1KzAwOjAw8qrKZgAAAABJRU5ErkJggg==" alt="">
                  </p>
             </div>
-            <div>
+            <div class="kuda-img-width">
                 <img class="kuda-width-img" width="500" src="https://kuda.com/static/kuda-open-account3-ab039bf76736df689ea12695d8950045.svg" alt="">
             </div>
         </div>
     </main>
-    <section>
+    <section  data-aos="fade-up"
+    data-aos-duration="1000">
         <div class="parent">
             <div class="child">
                 <p class="round">
@@ -291,6 +294,9 @@
             <button class="button-3">
                 <img class="img" width="110" src="./Assets/png-transparent-google-play-computer-icons-android-google-text-label-logo.png" alt="">
              </button>
+             <button class="button-4">
+                <img class="img" width="110" src="./Assets/2025-03-05 (6)-fotor-20250305163546.png" alt="">
+             </button>
         </div>
         <div>
             <h5 class="head-1">Products may vary by country or market.</h5>
@@ -358,7 +364,10 @@
             </p>
         </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
 
