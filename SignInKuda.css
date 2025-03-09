@@ -44,7 +44,7 @@
 .icon{
     margin-top: 7px;
     color: var(--successColor) ;
-    color: green;
+    color: #63E6BE;
 }
 .div-2{
     margin-left: 3px;
@@ -53,12 +53,11 @@
     font-size: 11px;
     font-weight: bolder;
     color: #40196D;
-
 }
 .check-1{
     font-size: 11px;
     font-weight: bolder;
-    color: green;
+    color: #63E6BE;
 }
 .div-3{
     border: 1px solid lightgray;
@@ -165,4 +164,18 @@ span:hover{
 .span-1{
     color: #40196D;
     opacity: initial;
+}
+.peekaboo{
+    padding: 8px;
+    border-radius: 50%;
+    color: #40196D;
+    background-color: #40196D;
+    position: fixed;
+    left: 1200px;
+    top: 500px;
+}
+.peekaboo:hover{
+    transition: all 0.2s;
+    padding: 10px;
+    cursor: pointer;
 }
