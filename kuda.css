@@ -45,7 +45,9 @@ body{
 .under{
     display: flex;
     gap: 4rem;
-    
+}
+.none{
+    color: #40196D;
 }
 .underline{
     text-decoration: none;
@@ -65,12 +67,14 @@ body{
 .airtime:hover{
     transition: all 0.01s;
     transform: translateY(2px);
+    color: #40196D;
 }
 .time:hover{
     transition: all 0.2s;
     /* transform: translateY(-1px); */
     transform: translateX(1px);
     font-size: 15px;
+    /* color: #40196D; */
 }
 .class-1{
     position: absolute;
